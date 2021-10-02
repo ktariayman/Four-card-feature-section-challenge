@@ -1,0 +1,99 @@
+:root {
+  --color-red: hsl(0, 78%, 62%);
+  --color-cyan: hsl(180, 62%, 55%);
+  --color-orange: hsl(34, 97%, 64%);
+  --color-blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+}
+
+
+header {
+  text-align: center;
+  max-width: 80%;
+  margin: 2rem auto  ;
+}
+h1 {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  font-weight: 400;
+  color: var(--grayish-blue);
+}
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: var(--grayish-blue);
+
+}
+.bold {
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 10px 10px 1px rgba(36, 36, 36, 0.2);
+  border-radius: 7px;
+  position: relative;
+  width: 22rem;
+  height: 17rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+}
+.cards-section h2 {
+  margin: 1rem 0 ;
+  font-size: 1.5rem;
+}
+.cards-section p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+.card img {
+  width: 15%;
+  position: absolute;
+  bottom: 1.6rem;
+  right: 1.6rem;  
+}
+
+.supervisor {
+  border-top: 3px solid var(--color-cyan);
+}
+.teambuilder {
+  border-top: 3px solid var(--color-red);
+}
+.karma {
+  border-top: 3px solid var(--color-orange);
+}
+.calculator {
+  border-top: 3px solid var(--color-blue);
+}
+.attribution{
+    text-align: center;
+    font-size: 16px;
+}
+
+/* MEDIA QUERIES */
+@media all and (min-width: 1024px) {
+  .cards-section {
+    flex-direction: row;
+    align-items: center;
+  }
+  .cards-center {
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+}
